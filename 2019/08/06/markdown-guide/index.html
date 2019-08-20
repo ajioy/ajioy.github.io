@@ -1,0 +1,402 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="generator" content="Hexo 3.9.0"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><title>markdown-guide | Ajioy's World</title><meta name="description" content="markdown-guide"><meta name="keywords" content="效率,学习笔记,总结"><meta name="author" content="Ajioy张品茗,ajioy@hotmail.com"><meta name="copyright" content="Ajioy张品茗"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><meta http-equiv="x-dns-prefetch-control" content="on"><link rel="canonical" href="https://ajioy.cn/2019/08/06/markdown-guide/"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="markdown-guide"><meta name="twitter:description" content="markdown-guide"><meta name="twitter:image" content="https://ajioy.cn/img/avatar.jpg"><meta property="og:type" content="article"><meta property="og:title" content="markdown-guide"><meta property="og:url" content="https://ajioy.cn/2019/08/06/markdown-guide/"><meta property="og:site_name" content="Ajioy's World"><meta property="og:description" content="markdown-guide"><meta property="og:image" content="https://ajioy.cn/img/avatar.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="prev" title="为什么我要建个人网站" href="https://ajioy.cn/2019/08/07/why-do-i-create-a-personal-website/"><link rel="dns-prefetch" href="https://hm.baidu.com"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?775f3d13f2151aafa4adbefb903f7e58";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();</script><meta name="google-site-verification" content="TkA7QH3W0pe7cnUWdZMggkrH-CjWi6F3Jkh8wBhXzA8"><meta name="msvalidate.01" content="2DCE8EA0FBF924D68222482C6D463546"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"cookieDomain":"https://ajioy.cn","msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
+  highlight_copy: 'true',
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: '添加书签',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天'
+
+  
+}</script></head><body><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true"></i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar"></div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text"> 前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#标题"><span class="toc-number">2.</span> <span class="toc-text"> 标题</span></a></li></ol><li class="toc-item toc-level-1"><a class="toc-link" href="#大标题内容放在上面"><span class="toc-number"></span> <span class="toc-text"> 大标题，内容放在===上面</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#中标题内容放在上面"><span class="toc-number">1.</span> <span class="toc-text"> 中标题，内容放在—上面</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#一级标题h1"><span class="toc-number"></span> <span class="toc-text"> 一级标题H1</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#二级标题h2"><span class="toc-number">1.</span> <span class="toc-text"> 二级标题H2</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#三级标题h3"><span class="toc-number">1.1.</span> <span class="toc-text"> 三级标题H3</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#四级标题h4"><span class="toc-number">1.1.1.</span> <span class="toc-text"> 四级标题H4</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#五级标题h5"><span class="toc-number">1.1.1.1.</span> <span class="toc-text"> 五级标题H5</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#六级标题不能再小了h6"><span class="toc-number">1.1.1.1.1.</span> <span class="toc-text"> 六级标题，不能再小了H6</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#正文"><span class="toc-number">2.</span> <span class="toc-text"> 正文</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#强调"><span class="toc-number">3.</span> <span class="toc-text"> 强调</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#引用"><span class="toc-number">4.</span> <span class="toc-text"> 引用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#列表"><span class="toc-number">5.</span> <span class="toc-text"> 列表</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#无序列表"><span class="toc-number">5.1.</span> <span class="toc-text"> 无序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#有序列表"><span class="toc-number">5.2.</span> <span class="toc-text"> 有序列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#嵌套列表"><span class="toc-number">5.3.</span> <span class="toc-text"> 嵌套列表</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#任务待办"><span class="toc-number">5.4.</span> <span class="toc-text"> 任务待办</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#排版"><span class="toc-number">6.</span> <span class="toc-text"> 排版</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#空格"><span class="toc-number">6.1.</span> <span class="toc-text"> 空格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分隔符"><span class="toc-number">6.2.</span> <span class="toc-text"> 分隔符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#对齐"><span class="toc-number">6.3.</span> <span class="toc-text"> 对齐</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#字体"><span class="toc-number">6.4.</span> <span class="toc-text"> 字体</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#折叠"><span class="toc-number">6.5.</span> <span class="toc-text"> 折叠</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#说点什么"><span class="toc-number">6.6.</span> <span class="toc-text"> 说点什么</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#图片"><span class="toc-number">7.</span> <span class="toc-text"> 图片</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#普通图片"><span class="toc-number">7.1.</span> <span class="toc-text"> 普通图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#带链接的图片方法一图片链接"><span class="toc-number">7.2.</span> <span class="toc-text"> 带链接的图片（方法一，图片+链接）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#带链接的图片方法二引用式"><span class="toc-number">7.3.</span> <span class="toc-text"> 带链接的图片（方法二，引用式）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#内部引用图片"><span class="toc-number">7.4.</span> <span class="toc-text"> 内部引用图片</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#控制图片大小及对齐方式"><span class="toc-number">7.5.</span> <span class="toc-text"> 控制图片大小及对齐方式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#链接"><span class="toc-number">8.</span> <span class="toc-text"> 链接</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#行内式"><span class="toc-number">8.1.</span> <span class="toc-text"> 行内式</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#参考式"><span class="toc-number">8.2.</span> <span class="toc-text"> 参考式</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#表格"><span class="toc-number">9.</span> <span class="toc-text"> 表格</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#代码"><span class="toc-number">10.</span> <span class="toc-text"> 代码</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#diff"><span class="toc-number">10.1.</span> <span class="toc-text"> diff</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#脚注"><span class="toc-number">11.</span> <span class="toc-text"> 脚注</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#方法一"><span class="toc-number">11.1.</span> <span class="toc-text"> 方法一</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#方法二"><span class="toc-number">11.2.</span> <span class="toc-text"> 方法二</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#视频"><span class="toc-number">12.</span> <span class="toc-text"> 视频</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#音频"><span class="toc-number">13.</span> <span class="toc-text"> 音频</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#地图"><span class="toc-number">14.</span> <span class="toc-text"> 地图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#latex公式"><span class="toc-number">15.</span> <span class="toc-text"> LaTeX公式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#流程图"><span class="toc-number">16.</span> <span class="toc-text"> 流程图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#序列图"><span class="toc-number">17.</span> <span class="toc-text"> 序列图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#甘特图"><span class="toc-number">18.</span> <span class="toc-text"> 甘特图</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最后是脚注的解释内容"><span class="toc-number">19.</span> <span class="toc-text"> 最后是脚注的解释内容</span></a></li></ol></li></div></div></div><div id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/ajioy/CDN/photo/post.png)"><div id="page-header"><span class="pull-left"> <a class="blog_title" id="site-name" href="/">Ajioy's World</a></span><div class="open toggle-menu pull-right"><div class="menu-icon-first"></div><div class="menu-icon-second"></div><div class="menu-icon-third"></div></div><span class="pull-right menus"><div class="mobile_author_icon"><img class="lozad" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'"><div class="mobile_author-info__description">分享，共同进步</div></div><hr><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 标签</span></a><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于</span></a><a class="site-page" href="/atom.xml "><i class="fa-fw fa fa-rss"></i><span> 订阅</span></a><script>document.body.addEventListener('touchstart', function(){ });</script></div></span><span class="pull-right"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索</span></a></span></div><div id="post-info"><div id="post-title"><div class="posttitle">markdown-guide</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar" aria-hidden="true"></i> 发表于 2019-08-06 14:23<span class="post-meta__separator">|</span><i class="fa fa-history" aria-hidden="true"></i> 更新于 2019-08-06 14:23</time><span class="post-meta__separator mobile_hidden">|</span><span class="mobile_hidden"><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/tools/">tools</a><i class="fa fa-angle-right" aria-hidden="true"></i><i class="fa fa-inbox post-meta__icon" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/tools/markdown/">markdown</a></span><div class="post-meta-wordcount"><span>字数总计: </span><span class="word-count">2.2k</span><span class="post-meta__separator">|</span><span>阅读时长: 9 分钟</span><span class="post-meta__separator">|</span><span>阅读量: </span><span id="busuanzi_value_page_pv"></span></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h2 id="前言"><a class="markdownIt-Anchor" href="#前言"></a> 前言</h2>
+<blockquote>
+<p>markdown已被越来越多的互联网厂商支持，github、有道云、简书、CSDN等，默认都支持md语法，因为实在是太方便了，真正做到了排版与文字分离，让你专注在文字本身。</p>
+</blockquote>
+<h2 id="标题"><a class="markdownIt-Anchor" href="#标题"></a> 标题</h2>
+<h1 id="大标题内容放在上面"><a class="markdownIt-Anchor" href="#大标题内容放在上面"></a> 大标题，内容放在===上面</h1>
+<h2 id="中标题内容放在上面"><a class="markdownIt-Anchor" href="#中标题内容放在上面"></a> 中标题，内容放在—上面</h2>
+<h1 id="一级标题h1"><a class="markdownIt-Anchor" href="#一级标题h1"></a> 一级标题H1</h1>
+<h2 id="二级标题h2"><a class="markdownIt-Anchor" href="#二级标题h2"></a> 二级标题H2</h2>
+<h3 id="三级标题h3"><a class="markdownIt-Anchor" href="#三级标题h3"></a> 三级标题H3</h3>
+<h4 id="四级标题h4"><a class="markdownIt-Anchor" href="#四级标题h4"></a> 四级标题H4</h4>
+<h5 id="五级标题h5"><a class="markdownIt-Anchor" href="#五级标题h5"></a> 五级标题H5</h5>
+<h6 id="六级标题不能再小了h6"><a class="markdownIt-Anchor" href="#六级标题不能再小了h6"></a> 六级标题，不能再小了H6</h6>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">## 标题</span><br><span class="line">大标题，内容放在===上面</span><br><span class="line">===</span><br><span class="line">中标题，内容放在---上面</span><br><span class="line">---</span><br><span class="line"># 一级标题H1</span><br><span class="line">## 二级标题H2</span><br><span class="line">### 三级标题H3</span><br><span class="line">#### 四级标题H4</span><br><span class="line">##### 五级标题H5</span><br><span class="line">###### 六级标题，不能再小了H6</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="正文"><a class="markdownIt-Anchor" href="#正文"></a> 正文</h2>
+<p>正文，常规文本，不需要任何标识。回车键不能直接换行，只能用以下两种方式。</p>
+<ol>
+<li>两个空格+回车</li>
+<li>用&lt; br&gt;或&lt; br/&gt;</li>
+</ol>
+<p>这是个用例，我要换行了。<br>
+成功换行。<br>
+另一种方式换行。<br><br>
+也成功了。</p>
+<hr>
+<h2 id="强调"><a class="markdownIt-Anchor" href="#强调"></a> 强调</h2>
+<p><strong>两个*加粗</strong><br>
+<strong>两个_加粗</strong><br>
+<em>一个星号斜体</em><br>
+<em>一个下划线斜体</em><br>
+<s>两个~删除线</s><br>
+<em><strong>三个星号是粗斜体</strong></em><br>
+<u>下划线</u></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;u&gt;下划线&lt;/u&gt;</span><br></pre></td></tr></table></figure>
+<p>这是<code>高亮显示</code></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是`高亮显示`</span><br></pre></td></tr></table></figure>
+<p>上标：X<sub>2</sub>，下标：O<sup>2</sup></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">上标：X&lt;sub&gt;2&lt;/sub&gt;，下标：O&lt;sup&gt;2&lt;/sup&gt;</span><br></pre></td></tr></table></figure>
+<pre><code>    hello, i am ajioy! a Tab in head (行首放8个空格)
+    something important here 
+</code></pre>
+<hr>
+<h2 id="引用"><a class="markdownIt-Anchor" href="#引用"></a> 引用</h2>
+<blockquote>
+<p>块引用<br>
+换行内容</p>
+<ul>
+<li>可以加列表</li>
+</ul>
+</blockquote>
+<p>嵌套引用</p>
+<blockquote>
+<p>外层引用</p>
+<blockquote>
+<p><code>内层</code>引用<br>
+还可以嵌套<strong>加粗</strong>，<em>斜体</em>等</p>
+<blockquote>
+<p>第三级引用</p>
+<blockquote>
+<p>第四级引用</p>
+</blockquote>
+</blockquote>
+</blockquote>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&gt; 第一层引用</span><br><span class="line">&gt; * 第一层引用加列表，行尾2个空格  </span><br><span class="line">&gt; * 第一层引用加列表  </span><br><span class="line">&gt;&gt; 第二层引用</span><br><span class="line">&gt;&gt;&gt; 第三层引用，依次类推</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="列表"><a class="markdownIt-Anchor" href="#列表"></a> 列表</h2>
+<h3 id="无序列表"><a class="markdownIt-Anchor" href="#无序列表"></a> 无序列表</h3>
+<ul>
+<li>c++</li>
+</ul>
+<ul>
+<li>python</li>
+</ul>
+<ul>
+<li>javascript</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* c++</span><br><span class="line">- python</span><br><span class="line">+ javascript</span><br></pre></td></tr></table></figure>
+<h3 id="有序列表"><a class="markdownIt-Anchor" href="#有序列表"></a> 有序列表</h3>
+<ol>
+<li>apple</li>
+<li>orange</li>
+<li>banana</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. apple</span><br><span class="line">2. orange</span><br><span class="line">3. banana</span><br></pre></td></tr></table></figure>
+<h3 id="嵌套列表"><a class="markdownIt-Anchor" href="#嵌套列表"></a> 嵌套列表</h3>
+<ul>
+<li>first
+<ul>
+<li>second
+<ol>
+<li>third</li>
+<li>third another</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>another one
+<ul>
+<li>great
+<ul>
+<li>fantastic</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">* first</span><br><span class="line">  * second</span><br><span class="line">    1. third</span><br><span class="line">    2. third another</span><br><span class="line">* another one</span><br><span class="line">  * great</span><br><span class="line">    * fantastic</span><br></pre></td></tr></table></figure>
+<h3 id="任务待办"><a class="markdownIt-Anchor" href="#任务待办"></a> 任务待办</h3>
+<ul>
+<li>[x] 跑步</li>
+<li>[x] 买日常用品</li>
+<li>[ ] 数据备份</li>
+<li>[ ] 买菜做饭</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">任务待办</span><br><span class="line">- [x] 跑步</span><br><span class="line">- [x] 买日常用品</span><br><span class="line">- [ ] 数据备份</span><br><span class="line">- [ ] 买菜做饭</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="排版"><a class="markdownIt-Anchor" href="#排版"></a> 排版</h2>
+<h3 id="空格"><a class="markdownIt-Anchor" href="#空格"></a> 空格</h3>
+<ul>
+<li>不断行的空格   或   1/4 中文<br></li>
+<li>半角的空格   或   半个中文，1字符<br></li>
+<li>全角的空格   或   1个中文，2字符<br></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&amp;nbsp; ---&gt; 牛皮的spa</span><br><span class="line">&amp;ensp; ---&gt; 嗯，很舒服的spa</span><br><span class="line">&amp;emsp; ---&gt; 摁（第四声），很大力的spa</span><br></pre></td></tr></table></figure>
+<h3 id="分隔符"><a class="markdownIt-Anchor" href="#分隔符"></a> 分隔符</h3>
+<hr>
+<hr>
+<hr>
+<p>三个减号，三个星号，三个下划线都可以作为分隔符</p>
+<h3 id="对齐"><a class="markdownIt-Anchor" href="#对齐"></a> 对齐</h3>
+<p align="left">left</p>  
+<p align="center">center</p>  
+<p align="right">right</p>  
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">align</span>=<span class="string">"left"</span>&gt;</span>left<span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">align</span>=<span class="string">"center"</span>&gt;</span>center<span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">align</span>=<span class="string">"right"</span>&gt;</span>right<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="字体"><a class="markdownIt-Anchor" href="#字体"></a> 字体</h3>
+<p><font face="黑体">我是黑体字</font><br>
+<font face="STCAIYUN">我是华文彩云</font><br>
+<font color="#0099ff" size="5" face="黑体">color=#0099ff size=5 face=“黑体”</font><br>
+<font color="gray" size="4">color=gray</font></p>
+<blockquote>
+<p>Size：文本的尺寸大小，可能的值：从 1 到 7 的数字。浏览器默认值是 3<br>
+github不支持</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">face</span>=<span class="string">"黑体"</span>&gt;</span>我是黑体字<span class="tag">&lt;/<span class="name">font</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">face</span>=<span class="string">"STCAIYUN"</span>&gt;</span>我是华文彩云<span class="tag">&lt;/<span class="name">font</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">#0099ff</span> <span class="attr">size</span>=<span class="string">7</span> <span class="attr">face</span>=<span class="string">"黑体"</span>&gt;</span>color=#0099ff size=72 face="黑体"<span class="tag">&lt;/<span class="name">font</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">font</span> <span class="attr">color</span>=<span class="string">gray</span> <span class="attr">size</span>=<span class="string">4</span>&gt;</span>color=gray<span class="tag">&lt;/<span class="name">font</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="折叠"><a class="markdownIt-Anchor" href="#折叠"></a> 折叠</h3>
+<details>
+<summary>点我展开折叠</summary>
+<h3 id="说点什么"><a class="markdownIt-Anchor" href="#说点什么"></a> 说点什么</h3>
+<ul>
+<li>这是个列表</li>
+<li>确实是个列表，你真棒</li>
+</ul>
+<blockquote>
+<p>一个小小的引用块🤔</p>
+</blockquote>
+</details>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">details</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">summary</span>&gt;</span>点我展开折叠<span class="tag">&lt;/<span class="name">summary</span>&gt;</span></span><br><span class="line"></span><br><span class="line">### 说点什么</span><br><span class="line"></span><br><span class="line">- 这是个列表</span><br><span class="line">- 确实是个列表，你真棒  </span><br><span class="line"></span><br><span class="line">&gt; 一个小小的引用块🤔  </span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">details</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注意：目前只有github支持</p>
+</blockquote>
+<hr>
+<h2 id="图片"><a class="markdownIt-Anchor" href="#图片"></a> 图片</h2>
+<h3 id="普通图片"><a class="markdownIt-Anchor" href="#普通图片"></a> 普通图片</h3>
+<p><img alt="pic" title="my pic" data-src="https://profile.csdnimg.cn/6/3/D/1_ajioy" class="lozad"></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![pic](https://profile.csdnimg.cn/6/3/D/1_ajioy.jpg &quot;my pic&quot;)</span><br></pre></td></tr></table></figure>
+<h3 id="带链接的图片方法一图片链接"><a class="markdownIt-Anchor" href="#带链接的图片方法一图片链接"></a> 带链接的图片（方法一，图片+链接）</h3>
+<p><a href="https://blog.csdn.net/ajioy" target="_blank" rel="noopener"><img alt="pic" title="my pic" data-src="https://profile.csdnimg.cn/6/3/D/1_ajioy" class="lozad"></a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[![pic](https://profile.csdnimg.cn/6/3/D/1_ajioy.jpg &quot;my pic&quot;)](https://blog.csdn.net/ajioy)</span><br></pre></td></tr></table></figure>
+<h3 id="带链接的图片方法二引用式"><a class="markdownIt-Anchor" href="#带链接的图片方法二引用式"></a> 带链接的图片（方法二，引用式）</h3>
+<p><a href="https://blog.csdn.net/ajioy" target="_blank" rel="noopener">![blog]</a><br>
+[blog]: <a href="https://profile.csdnimg.cn/6/3/D/1_ajioy" target="_blank" rel="noopener">https://profile.csdnimg.cn/6/3/D/1_ajioy</a> “my pic”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[![blog]](https://blog.csdn.net/ajioy)</span><br><span class="line">[blog]: https://profile.csdnimg.cn/6/3/D/1_ajioy.jpg &quot;my pic&quot;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>大部分平台不支持</p>
+</blockquote>
+<h3 id="内部引用图片"><a class="markdownIt-Anchor" href="#内部引用图片"></a> 内部引用图片</h3>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[![SMILE](_pics/smile.gif)](https://blog.csdn.net/ajioy)</span><br><span class="line">其中SMILE是标题，_pics是md文件所在目录下的子目录，也是图片所在地，smile.gif则是图片名称</span><br></pre></td></tr></table></figure>
+<h3 id="控制图片大小及对齐方式"><a class="markdownIt-Anchor" href="#控制图片大小及对齐方式"></a> 控制图片大小及对齐方式</h3>
+<ul>
+<li>方法一，平台通用的标签法</li>
+</ul>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">align</span>=<span class="string">"right"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"https://profile.csdnimg.cn/6/3/D/1_ajioy.jpg"</span> <span class="attr">width</span>=<span class="string">"400px"</span> <span class="attr">height</span>=<span class="string">"300px"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<div align="right">
+<img width="400px" height="300px" data-src="https://profile.csdnimg.cn/6/3/D/1_ajioy" class="lozad">
+</div>
+<ul>
+<li>方法二，部分平台支持<br>
+![pic](url)，其中url后面加个空格，再=WIDTHxHEIGHT，HEIGHT可以省略。<br>
+如 (<a href="http://url.jpg" target="_blank" rel="noopener">http://url.jpg</a> =400x300)</li>
+</ul>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">![<span class="string">pic</span>](<span class="link">https://profile.csdnimg.cn/6/3/D/1_ajioy.jpg =400x300</span>)</span><br><span class="line">![<span class="string">pic</span>](<span class="link">https://profile.csdnimg.cn/6/3/D/1_ajioy.jpg =400x</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>方法三，简书等部分平台支持</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![pic](url)的基础上加上&#123;:height=&quot;300px&quot; width=&quot;300px&quot;&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="链接"><a class="markdownIt-Anchor" href="#链接"></a> 链接</h2>
+<h3 id="行内式"><a class="markdownIt-Anchor" href="#行内式"></a> 行内式</h3>
+<p>直接链接1 <a href="https://blog.csdn.net/ajioy" target="_blank" rel="noopener">https://blog.csdn.net/ajioy</a><br>
+直接链接2 <a href="https://blog.csdn.net/ajioy" target="_blank" rel="noopener">https://blog.csdn.net/ajioy</a><br>
+<a href="https://github.com/ajioy" target="_blank" rel="noopener">带标题链接</a><br>
+<a href="https://blog.csdn.net/ajioy" title="go to my blog" target="_blank" rel="noopener">带标题链接且鼠标悬停</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">直接链接1 https://blog.csdn.net/ajioy  </span><br><span class="line">直接链接2 &lt;https://blog.csdn.net/ajioy&gt;  </span><br><span class="line">[带标题链接](https://github.com/ajioy)  </span><br><span class="line">[带标题链接且鼠标悬停](https://blog.csdn.net/ajioy &quot;go to my blog&quot;)</span><br></pre></td></tr></table></figure>
+<h3 id="参考式"><a class="markdownIt-Anchor" href="#参考式"></a> 参考式</h3>
+<p>[带标题链接][link]<br>
+[link]: <a href="https://blog.cdsn.net/ajioy" target="_blank" rel="noopener">https://blog.cdsn.net/ajioy</a> “Blog”</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[带标题链接][link]</span><br><span class="line">[link]: https://blog.cdsn.net/ajioy &quot;Blog&quot;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>参考式相对于行内式的优点是，可以在多个不同的位置引用同一个URL，图片也可以用此方式</p>
+</blockquote>
+<hr>
+<h2 id="表格"><a class="markdownIt-Anchor" href="#表格"></a> 表格</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">序号</th>
+<th style="text-align:left">名字</th>
+<th style="text-align:right">分数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">101</td>
+<td style="text-align:left">ajioy</td>
+<td style="text-align:right">99.82</td>
+</tr>
+<tr>
+<td style="text-align:center">102</td>
+<td style="text-align:left">scotte</td>
+<td style="text-align:right">98.12</td>
+</tr>
+<tr>
+<td style="text-align:center">103</td>
+<td style="text-align:left">bot</td>
+<td style="text-align:right">97.23</td>
+</tr>
+</tbody>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 序号 | 名字   | 分数  |</span><br><span class="line">| :--: | :---   | ---:  |</span><br><span class="line">| 101  | ajioy  | 99.82 |</span><br><span class="line">| 102  | scotte | 98.12 |</span><br><span class="line">| 103  | bot    | 97.23 |</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>:— 左对齐，冒号在左边<br>
+—: 右对齐，冒号在右边<br>
+:–: 居中对齐，冒号两边</p>
+</blockquote>
+<p>复杂表格</p>
+<table>
+<tr>
+<td>目标</td>
+<td>计划</td>
+<td>说明</td>
+</tr>
+<tr>
+<td>晨跑</td>
+<td><ol>
+<li>6:30起床</li>
+<li>热身10分钟</li>
+<li>平地跑5公里，约35分钟</li>
+<li>跑后拉伸5分钟</li>
+</ol></td>
+<td><ul>
+<li>下雨天不跑</li>
+<li>上医院不跑</li>
+<li>周末不跑</li>
+</ul></td>
+</tr>
+<tr>
+<td>健康生活</td>
+<td>作息6:30-23:00，睡足7.5小时</td>
+<td><ul>
+<li>争取22:30入睡</li>
+<li>周末分别顺延30分钟</li>
+</ul></td>
+</tr>
+</table>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&lt;table&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">&lt;td&gt;目标&lt;/td&gt;</span><br><span class="line">&lt;td&gt;计划&lt;/td&gt;</span><br><span class="line">&lt;td&gt;说明&lt;/td&gt;</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">&lt;td&gt;晨跑&lt;/td&gt;</span><br><span class="line">&lt;td&gt;&lt;ol&gt;</span><br><span class="line">&lt;li&gt;6:30起床&lt;/li&gt;</span><br><span class="line">&lt;li&gt;热身10分钟&lt;/li&gt;</span><br><span class="line">&lt;li&gt;平地跑5公里，约35分钟&lt;/li&gt;</span><br><span class="line">&lt;li&gt;跑后拉伸5分钟&lt;/li&gt;</span><br><span class="line">&lt;/ol&gt;&lt;/td&gt;</span><br><span class="line">&lt;td&gt;&lt;ul&gt;</span><br><span class="line">&lt;li&gt;下雨天不跑&lt;/li&gt;</span><br><span class="line">&lt;li&gt;上医院不跑&lt;/li&gt;</span><br><span class="line">&lt;li&gt;周末不跑&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;&lt;/td&gt;</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">&lt;tr&gt;</span><br><span class="line">&lt;td&gt;健康生活&lt;/td&gt;</span><br><span class="line">&lt;td&gt;作息6:30-23:00，睡足7.5小时&lt;/td&gt;</span><br><span class="line">&lt;td&gt;&lt;ul&gt;</span><br><span class="line">&lt;li&gt;争取22:30入睡&lt;/li&gt;</span><br><span class="line">&lt;li&gt;周末分别顺延30分钟&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;&lt;/td&gt;</span><br><span class="line">&lt;/tr&gt;</span><br><span class="line">&lt;/table&gt;</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="代码"><a class="markdownIt-Anchor" href="#代码"></a> 代码</h2>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">add</span><span class="params">(a, b)</span>:</span>      // python</span><br><span class="line">    <span class="keyword">return</span> a + b</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install autojump <span class="comment"># bash</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="built_in">printf</span>(<span class="string">"hello,ajioy"</span>); <span class="comment">// cpp</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="diff"><a class="markdownIt-Anchor" href="#diff"></a> diff</h3>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+ add</span></span><br><span class="line"><span class="deletion">- delete</span></span><br><span class="line">~ modify?</span><br><span class="line"><span class="addition">! what's this</span></span><br><span class="line"># i don't known</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="脚注"><a class="markdownIt-Anchor" href="#脚注"></a> 脚注</h2>
+<h3 id="方法一"><a class="markdownIt-Anchor" href="#方法一"></a> 方法一</h3>
+<p>句中作脚注，解释一个名词<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup>，再解释一个<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup>。<br>
+脚注放在文章最下面，脚注可以直接放链接。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">句中作脚注，解释一个名词[^1]，再解释一个[^2]。  </span><br><span class="line">脚注放在文章最下面，脚注可以直接放链接。</span><br><span class="line">[^1]: 解释名词1  </span><br><span class="line">[^2]: https://www.google.com</span><br></pre></td></tr></table></figure>
+<h3 id="方法二"><a class="markdownIt-Anchor" href="#方法二"></a> 方法二</h3>
+<p>整个句子作脚注。<sup class="footnote-ref"><a href="#fn3" id="fnref3">[3]</a></sup><br>
+<code>有道云</code>支持。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">整个句子作脚注。^[这里就是脚注内容，默认会生成脚注序号]</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>github不支持以上两种方式，以下为替代方案</p>
+</blockquote>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">定义</span><br><span class="line"><span class="tag">&lt;<span class="name">a</span> <span class="attr">name</span>=<span class="string">"myfootnote1"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">a</span>&gt;</span>: Footnote content goes here</span><br><span class="line">引用</span><br><span class="line"><span class="tag">&lt;<span class="name">sup</span>&gt;</span>[1](#myfootnote1)<span class="tag">&lt;/<span class="name">sup</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>我要解释一个名词<sup><a href="#myfootnote1">1</a></sup></p>
+<p><a name="myfootnote1">1</a>: Footnote content goes here</p>
+<h2 id="视频"><a class="markdownIt-Anchor" href="#视频"></a> 视频</h2>
+<p>以B站为例，点分享按钮，复制<code>嵌入代码</code>，粘贴到md文件即可，其他网站类似。</p>
+<iframe src="//player.bilibili.com/player.html?aid=57373164&cid=100164001&page=1" width="600" height="300" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">"//player.bilibili.com/player.html?aid=57373164&amp;cid=100164001&amp;page=1"</span> <span class="attr">width</span>=<span class="string">"600"</span> <span class="attr">height</span>=<span class="string">"300"</span> <span class="attr">scrolling</span>=<span class="string">"no"</span> <span class="attr">border</span>=<span class="string">"0"</span> <span class="attr">frameborder</span>=<span class="string">"no"</span> <span class="attr">framespacing</span>=<span class="string">"0"</span> <span class="attr">allowfullscreen</span>=<span class="string">"true"</span>&gt;</span> <span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>github不支持，用带链接的GIF代替</p>
+</blockquote>
+<h2 id="音频"><a class="markdownIt-Anchor" href="#音频"></a> 音频</h2>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">id</span>=<span class="string">"audio"</span> <span class="attr">controls</span>=<span class="string">""</span> <span class="attr">preload</span>=<span class="string">"none"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">source</span> <span class="attr">id</span>=<span class="string">"mp3"</span> <span class="attr">src</span>=<span class="string">"http://yourmusicurl.mp3"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">audio</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>github不支持</p>
+</blockquote>
+<hr>
+<h2 id="地图"><a class="markdownIt-Anchor" href="#地图"></a> 地图</h2>
+<p>以百度地图为例，<br>
+访问API自定义地图 <a href="http://api.map.baidu.com/lbsapi/creatmap/index.html" target="_blank" rel="noopener">http://api.map.baidu.com/lbsapi/creatmap/index.html</a></p>
+<p>设置好地点、文字、路线、标记后，点获取代码，复制代码，直接放在md文件，或将代码存放在map.html文件，同一目录下，再引入markdown</p>
+<blockquote>
+<p>github不支持</p>
+</blockquote>
+<hr>
+<h2 id="latex公式"><a class="markdownIt-Anchor" href="#latex公式"></a> LaTeX公式</h2>
+<p>todo<br>
+访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax</a></p>
+<hr>
+<h2 id="流程图"><a class="markdownIt-Anchor" href="#流程图"></a> 流程图</h2>
+<p>todo<br>
+语法参考：<a href="http://adrai.github.io/flowchart.js/" target="_blank" rel="noopener">流程图语法参考</a></p>
+<hr>
+<h2 id="序列图"><a class="markdownIt-Anchor" href="#序列图"></a> 序列图</h2>
+<p>todo<br>
+语法参考：<a href="http://bramp.github.io/js-sequence-diagrams/" target="_blank" rel="noopener">序列图语法参考</a></p>
+<hr>
+<h2 id="甘特图"><a class="markdownIt-Anchor" href="#甘特图"></a> 甘特图</h2>
+<p>todo<br>
+语法参考：<a href="https://knsv.github.io/mermaid/#gant-diagrams" target="_blank" rel="noopener">甘特图语法参考</a></p>
+<hr>
+<h2 id="最后是脚注的解释内容"><a class="markdownIt-Anchor" href="#最后是脚注的解释内容"></a> 最后是脚注的解释内容</h2>
+<hr>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>pumas are large cat-like animals which are found in America. <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>ruby is a script lanuage; <a href="#fnref2" class="footnote-backref">↩︎</a></p>
+</li>
+<li id="fn3" class="footnote-item"><p>这里就是脚注内容，默认会生成脚注序号 <a href="#fnref3" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:ajioy@hotmail.com">Ajioy张品茗</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://ajioy.cn/2019/08/06/markdown-guide/">https://ajioy.cn/2019/08/06/markdown-guide/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://ajioy.cn">Ajioy's World</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/效率/">效率    </a><a class="post-meta__tags" href="/tags/学习笔记/">学习笔记    </a><a class="post-meta__tags" href="/tags/总结/">总结    </a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d5143f6f8e9ce6b" async></script></div></div><div class="post-reward"><a class="reward-buttom"><i class="fa fa-qrcode"></i> 打赏<div class="reward-main"><ul class="reward-all"><li class="reward-item"><img class="lozad post-qr-code__img" src="/img/wechat.jpg"><div class="post-qr-code__desc">微信</div></li><li class="reward-item"><img class="lozad post-qr-code__img" src="/img/alipay.jpg"><div class="post-qr-code__desc">支付宝</div></li></ul></div></a></div><nav class="pagination_post" id="pagination"><div class="prev-post pull-full"><a href="/2019/08/07/why-do-i-create-a-personal-website/"><img class="prev_cover lozad" data-src="https://cdn.jsdelivr.net/gh/ajioy/CDN/blog/why-do-i-create-a-personal-website/desktop.png" onerror="onerror=null;src='/img/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>为什么我要建个人网站</span></div></a></div></nav><div class="relatedPosts"><div class="relatedPosts_headline"><i class="fa fa-fw fa-thumbs-up" aria-hidden="true"></i><span> 相关推荐</span></div><div class="relatedPosts_list"><div class="relatedPosts_item"><a href="/2019/08/20/linux-terminal-shortcuts/" title="linux终端使用频率最高的快捷键"><img class="relatedPosts_cover lozad" data-src="https://cdn.jsdelivr.net/gh/ajioy/CDN/cover/linux-terminal-shortcuts/coding.jpg"><div class="relatedPosts_title">linux终端使用频率最高的快捷键</div></a></div><div class="relatedPosts_item"><a href="/2019/08/07/why-do-i-create-a-personal-website/" title="为什么我要建个人网站"><img class="relatedPosts_cover lozad" data-src="https://cdn.jsdelivr.net/gh/ajioy/CDN/blog/why-do-i-create-a-personal-website/desktop.png"><div class="relatedPosts_title">为什么我要建个人网站</div></a></div></div><div class="clear_both"></div></div><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/gh/ajioy/CDN/js/Valine.min.js"></script><script>var notify = 'false' == true ? true : false;
+var verify = 'false' == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'blbH6Kny99Uq3hMC9LPAynVI-MdYXbMMI',
+  appKey:'2og4tqGpQXO7m3pvQ8XOhQQN',
+  placeholder:'请留下你的小脚印哦~',
+  avatar:'mp',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></div><footer><div class="layout" id="footer"><div class="copyright">&copy;2019 By Ajioy张品茗</div><div class="footer_custom_text">记录是最好的记忆，活到老学到老！</div></div></footer><i class="fa fa-arrow-up" id="go-up" aria-hidden="true"></i><section class="rightside" id="rightside"><i class="fa fa-book" id="readmode" title="阅读模式"> </i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><a class="translate_chn_to_cht" id="translateLink" href="javascript:translatePage();" title="简繁转换">繁</a><i class="fa fa-moon-o nightshift" id="nightshift" title="夜间模式"></i></section><div id="post_bottom"><div id="post_bottom_items"><a id="to_comment" href="#post-comment"><i class="scroll_to_comment fa fa-comments"></i></a><i class="fa fa-list" id="mobile_toc"></i><div id="toc_mobile"><div class="toc_mobile_headline">目录</div><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#前言"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text"> 前言</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#标题"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text"> 标题</span></a></li></ol><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#大标题内容放在上面"><span class="toc_mobile_items-number"></span> <span class="toc_mobile_items-text"> 大标题，内容放在===上面</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#中标题内容放在上面"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text"> 中标题，内容放在—上面</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-1"><a class="toc_mobile_items-link" href="#一级标题h1"><span class="toc_mobile_items-number"></span> <span class="toc_mobile_items-text"> 一级标题H1</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#二级标题h2"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text"> 二级标题H2</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#三级标题h3"><span class="toc_mobile_items-number">1.1.</span> <span class="toc_mobile_items-text"> 三级标题H3</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#四级标题h4"><span class="toc_mobile_items-number">1.1.1.</span> <span class="toc_mobile_items-text"> 四级标题H4</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-5"><a class="toc_mobile_items-link" href="#五级标题h5"><span class="toc_mobile_items-number">1.1.1.1.</span> <span class="toc_mobile_items-text"> 五级标题H5</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-6"><a class="toc_mobile_items-link" href="#六级标题不能再小了h6"><span class="toc_mobile_items-number">1.1.1.1.1.</span> <span class="toc_mobile_items-text"> 六级标题，不能再小了H6</span></a></li></ol></li></ol></li></ol></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#正文"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text"> 正文</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#强调"><span class="toc_mobile_items-number">3.</span> <span class="toc_mobile_items-text"> 强调</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#引用"><span class="toc_mobile_items-number">4.</span> <span class="toc_mobile_items-text"> 引用</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#列表"><span class="toc_mobile_items-number">5.</span> <span class="toc_mobile_items-text"> 列表</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#无序列表"><span class="toc_mobile_items-number">5.1.</span> <span class="toc_mobile_items-text"> 无序列表</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#有序列表"><span class="toc_mobile_items-number">5.2.</span> <span class="toc_mobile_items-text"> 有序列表</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#嵌套列表"><span class="toc_mobile_items-number">5.3.</span> <span class="toc_mobile_items-text"> 嵌套列表</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#任务待办"><span class="toc_mobile_items-number">5.4.</span> <span class="toc_mobile_items-text"> 任务待办</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#排版"><span class="toc_mobile_items-number">6.</span> <span class="toc_mobile_items-text"> 排版</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#空格"><span class="toc_mobile_items-number">6.1.</span> <span class="toc_mobile_items-text"> 空格</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#分隔符"><span class="toc_mobile_items-number">6.2.</span> <span class="toc_mobile_items-text"> 分隔符</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#对齐"><span class="toc_mobile_items-number">6.3.</span> <span class="toc_mobile_items-text"> 对齐</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#字体"><span class="toc_mobile_items-number">6.4.</span> <span class="toc_mobile_items-text"> 字体</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#折叠"><span class="toc_mobile_items-number">6.5.</span> <span class="toc_mobile_items-text"> 折叠</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#说点什么"><span class="toc_mobile_items-number">6.6.</span> <span class="toc_mobile_items-text"> 说点什么</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#图片"><span class="toc_mobile_items-number">7.</span> <span class="toc_mobile_items-text"> 图片</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#普通图片"><span class="toc_mobile_items-number">7.1.</span> <span class="toc_mobile_items-text"> 普通图片</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#带链接的图片方法一图片链接"><span class="toc_mobile_items-number">7.2.</span> <span class="toc_mobile_items-text"> 带链接的图片（方法一，图片+链接）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#带链接的图片方法二引用式"><span class="toc_mobile_items-number">7.3.</span> <span class="toc_mobile_items-text"> 带链接的图片（方法二，引用式）</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#内部引用图片"><span class="toc_mobile_items-number">7.4.</span> <span class="toc_mobile_items-text"> 内部引用图片</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#控制图片大小及对齐方式"><span class="toc_mobile_items-number">7.5.</span> <span class="toc_mobile_items-text"> 控制图片大小及对齐方式</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#链接"><span class="toc_mobile_items-number">8.</span> <span class="toc_mobile_items-text"> 链接</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#行内式"><span class="toc_mobile_items-number">8.1.</span> <span class="toc_mobile_items-text"> 行内式</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#参考式"><span class="toc_mobile_items-number">8.2.</span> <span class="toc_mobile_items-text"> 参考式</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#表格"><span class="toc_mobile_items-number">9.</span> <span class="toc_mobile_items-text"> 表格</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#代码"><span class="toc_mobile_items-number">10.</span> <span class="toc_mobile_items-text"> 代码</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#diff"><span class="toc_mobile_items-number">10.1.</span> <span class="toc_mobile_items-text"> diff</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#脚注"><span class="toc_mobile_items-number">11.</span> <span class="toc_mobile_items-text"> 脚注</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#方法一"><span class="toc_mobile_items-number">11.1.</span> <span class="toc_mobile_items-text"> 方法一</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#方法二"><span class="toc_mobile_items-number">11.2.</span> <span class="toc_mobile_items-text"> 方法二</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#视频"><span class="toc_mobile_items-number">12.</span> <span class="toc_mobile_items-text"> 视频</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#音频"><span class="toc_mobile_items-number">13.</span> <span class="toc_mobile_items-text"> 音频</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#地图"><span class="toc_mobile_items-number">14.</span> <span class="toc_mobile_items-text"> 地图</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#latex公式"><span class="toc_mobile_items-number">15.</span> <span class="toc_mobile_items-text"> LaTeX公式</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#流程图"><span class="toc_mobile_items-number">16.</span> <span class="toc_mobile_items-text"> 流程图</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#序列图"><span class="toc_mobile_items-number">17.</span> <span class="toc_mobile_items-text"> 序列图</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#甘特图"><span class="toc_mobile_items-number">18.</span> <span class="toc_mobile_items-text"> 甘特图</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#最后是脚注的解释内容"><span class="toc_mobile_items-number">19.</span> <span class="toc_mobile_items-text"> 最后是脚注的解释内容</span></a></li></ol></li></div></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css"><script src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css"><script>$(function () {
+  $('span.katex-display').wrap('<div class="katex-wrap"></div>')
+})</script><script async src="/js/search/local-search.js"></script><script src="/js/nightshift.js"></script><script id="ribbon" src="/js/third-party/canvas-ribbon.js" size="150" alpha="0.3" zindex="-1" data-click="false"></script><script src="/js/tw_cn.js"></script><script>translateInitilization()
+
+</script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@1.2.2/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script><script>const observer = lozad(); // lazy loads elements with default selector as '.lozad'
+observer.observe();</script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>

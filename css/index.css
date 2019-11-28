@@ -1242,7 +1242,7 @@ blockquote {
   text-decoration: none;
 }
 .flink .md-links li {
-  width: calc(100% / 3 - 14px);
+  width: calc(100% / 2 - 14px);
   float: left;
   list-style: none;
 }

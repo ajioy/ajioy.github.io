@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ajioy.cn/tags/index.html</loc>
+    
+    <lastmod>2019-12-02T08:30:48.509Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ajioy.cn/link/index.html</loc>
+    
+    <lastmod>2019-12-02T08:29:03.012Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ajioy.cn/categories/index.html</loc>
+    
+    <lastmod>2019-12-02T08:28:52.096Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ajioy.cn/about/index.html</loc>
+    
+    <lastmod>2019-12-02T08:28:41.473Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ajioy.cn/life/good-news-my-little-angle-was-borned/</loc>
     
     <lastmod>2019-11-30T15:30:00.000Z</lastmod>
@@ -26,13 +54,6 @@
     <loc>https://ajioy.cn/vim/vim-without-plugins/</loc>
     
     <lastmod>2019-11-30T13:30:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ajioy.cn/about/index.html</loc>
-    
-    <lastmod>2019-11-28T08:21:17.395Z</lastmod>
     
   </url>
   
@@ -103,27 +124,6 @@
     <loc>https://ajioy.cn/linux/linux-terminal-shortcuts/</loc>
     
     <lastmod>2019-08-20T10:38:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ajioy.cn/tags/index.html</loc>
-    
-    <lastmod>2019-08-20T07:57:59.492Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ajioy.cn/link/index.html</loc>
-    
-    <lastmod>2019-08-20T07:57:50.383Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ajioy.cn/categories/index.html</loc>
-    
-    <lastmod>2019-08-20T07:15:51.804Z</lastmod>
     
   </url>
   

@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://ajioy.cn/working/technical-lead-tips/</loc>
+    
+    <lastmod>2019-12-24T11:30:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ajioy.cn/frontend/html5-cheat-sheet/</loc>
+    
+    <lastmod>2019-12-23T09:52:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://ajioy.cn/howto/how-to-keep-your-memory-for-a-long-time/</loc>
+    
+    <lastmod>2019-12-23T09:27:00.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://ajioy.cn/gallery/index.html</loc>
     
     <lastmod>2019-12-10T09:47:03.961Z</lastmod>
@@ -89,13 +110,6 @@
     <loc>https://ajioy.cn/python/python-multithread-and-multiprocess/</loc>
     
     <lastmod>2019-10-31T14:00:00.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://ajioy.cn/howto/how-to-keep-your-memory-for-a-long-time/</loc>
-    
-    <lastmod>2019-10-01T06:24:00.000Z</lastmod>
     
   </url>
   

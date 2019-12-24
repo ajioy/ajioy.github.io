@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://ajioy.cn/working/technical-lead-tips/</loc>
+    <lastmod>2019-12-24</lastmod>
+  </url>  <url>
+    <loc>https://ajioy.cn/frontend/html5-cheat-sheet/</loc>
+    <lastmod>2019-12-23</lastmod>
+  </url>  <url>
+    <loc>https://ajioy.cn/howto/how-to-keep-your-memory-for-a-long-time/</loc>
+    <lastmod>2019-12-23</lastmod>
+  </url>  <url>
     <loc>https://ajioy.cn/life/good-news-my-little-angle-was-borned/</loc>
     <lastmod>2019-11-30</lastmod>
   </url>  <url>
@@ -24,9 +33,6 @@
   </url>  <url>
     <loc>https://ajioy.cn/python/python-multithread-and-multiprocess/</loc>
     <lastmod>2019-10-31</lastmod>
-  </url>  <url>
-    <loc>https://ajioy.cn/howto/how-to-keep-your-memory-for-a-long-time/</loc>
-    <lastmod>2019-10-01</lastmod>
   </url>  <url>
     <loc>https://ajioy.cn/python/python-iterator-and-generator/</loc>
     <lastmod>2019-09-30</lastmod>

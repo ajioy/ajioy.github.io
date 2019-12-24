@@ -3211,7 +3211,7 @@ blockquote footer cite:before {
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
-  height: 90px;
+  height: 80px;
   margin-top: 0.5rem;
   word-break: break-word;
 }

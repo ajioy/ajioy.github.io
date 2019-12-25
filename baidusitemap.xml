@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://ajioy.cn/frontend/css3-cheat-sheet/</loc>
+    <lastmod>2019-12-25</lastmod>
+  </url>  <url>
     <loc>https://ajioy.cn/working/technical-lead-tips/</loc>
-    <lastmod>2019-12-24</lastmod>
+    <lastmod>2019-12-25</lastmod>
   </url>  <url>
     <loc>https://ajioy.cn/frontend/html5-cheat-sheet/</loc>
     <lastmod>2019-12-23</lastmod>

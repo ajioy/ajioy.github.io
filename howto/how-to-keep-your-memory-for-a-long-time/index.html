@@ -1,0 +1,258 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>如何长时间保存记忆，分享我的数据备份大法 | Ajioy's World</title><meta name="keywords" content="数据备份 备份原则 主备同步 云盘 veracrypt 加密 安全"><meta name="author" content="张品茗"><meta name="copyright" content="张品茗"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言如果你是通过搜索引擎找到的这篇文章，恭喜你，这是为你而写，你将通过十几分钟的阅读获得我六年半的数据备份经验。 如果你只是碰巧看到，同样恭喜你，从现在开始，你可以树立保存记忆数据的意识，然后按照我提供的方法，开始行动起来，数年之后，你会含泪感谢我，对，就是这么自信（笑）。 背景说明大部分人还停留在保存电影、十八禁、工作资料阶段。实际上，对我们而言，很多数据都是重要的，只是你还未察觉到。它们记录着">
+<meta property="og:type" content="article">
+<meta property="og:title" content="如何长时间保存记忆，分享我的数据备份大法">
+<meta property="og:url" content="https://ajioy.cn/howto/how-to-keep-your-memory-for-a-long-time/index.html">
+<meta property="og:site_name" content="Ajioy&#39;s World">
+<meta property="og:description" content="前言如果你是通过搜索引擎找到的这篇文章，恭喜你，这是为你而写，你将通过十几分钟的阅读获得我六年半的数据备份经验。 如果你只是碰巧看到，同样恭喜你，从现在开始，你可以树立保存记忆数据的意识，然后按照我提供的方法，开始行动起来，数年之后，你会含泪感谢我，对，就是这么自信（笑）。 背景说明大部分人还停留在保存电影、十八禁、工作资料阶段。实际上，对我们而言，很多数据都是重要的，只是你还未察觉到。它们记录着">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/ajioy/CDN@master/cover/how-to-keep-your-memory-for-a-long-time.jpg">
+<meta property="article:published_time" content="2019-09-30T08:12:00.000Z">
+<meta property="article:modified_time" content="2019-12-23T09:27:00.000Z">
+<meta property="article:author" content="张品茗">
+<meta property="article:tag" content="总结">
+<meta property="article:tag" content="分享">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/ajioy/CDN@master/cover/how-to-keep-your-memory-for-a-long-time.jpg"><link rel="shortcut icon" href="/img/favicon.ico"><link rel="canonical" href="https://ajioy.cn/howto/how-to-keep-your-memory-for-a-long-time/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta name="google-site-verification" content="TkA7QH3W0pe7cnUWdZMggkrH-CjWi6F3Jkh8wBhXzA8"/><meta name="bing-site-verification" content="2DCE8EA0FBF924D68222482C6D463546"/><meta name="baidu-site-verification" content="code-rxlMOUvpt1"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?775f3d13f2151aafa4adbefb903f7e58";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=TkA7QH3W0pe7cnUWdZMggkrH-CjWi6F3Jkh8wBhXzA8"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'TkA7QH3W0pe7cnUWdZMggkrH-CjWi6F3Jkh8wBhXzA8');
+</script><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 张品茗","link":"链接: ","source":"来源: Ajioy's World","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isAnchor: true
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '如何长时间保存记忆，分享我的数据备份大法',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2019-12-23 17:27 17:27:00'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Ajioy's World" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data is-center"><div class="data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">22</div></a></div><div class="data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a></div><div class="data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 相册</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fa fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于|留言</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> 订阅</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/ajioy/CDN@master/cover/how-to-keep-your-memory-for-a-long-time.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">Ajioy's World</a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 主页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fa fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);" rel="external nofollow noreferrer"><i class="fa-fw fa fa-list"></i><span> 清单</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/gallery/"><i class="fa-fw fas fa-images"></i><span> 相册</span></a></li><li><a class="site-page child" href="/books/"><i class="fa-fw fa fa-book"></i><span> 阅读</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fa fa-film"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-heart"></i><span> 关于|留言</span></a></div><div class="menus_item"><a class="site-page" href="/atom.xml"><i class="fa-fw fa fa-rss"></i><span> 订阅</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">如何长时间保存记忆，分享我的数据备份大法</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2019-09-30T08:12:00.000Z" title="发表于 2019-09-30 16:12 16:12:00">2019-09-30 16:12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2019-12-23T09:27:00.000Z" title="更新于 2019-12-23 17:27 17:27:00">2019-12-23 17:27</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/howto/">howto</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">3k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>8分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="如何长时间保存记忆，分享我的数据备份大法"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>如果你是通过搜索引擎找到的这篇文章，恭喜你，这是为你而写，<strong>你将通过十几分钟的阅读获得我六年半的数据备份经验</strong>。</p>
+<p>如果你只是碰巧看到，同样恭喜你，从现在开始，你可以<strong>树立保存记忆数据的意识</strong>，然后按照我提供的方法，开始行动起来，数年之后，你会含泪感谢我，对，就是这么自信（笑）。</p>
+<h2 id="背景说明"><a href="#背景说明" class="headerlink" title="背景说明"></a>背景说明</h2><p>大部分人还停留在保存<code>电影</code>、<code>十八禁</code>、<code>工作资料</code>阶段。实际上，对我们而言，很多数据都是重要的，只是你还未察觉到。<strong>它们记录着你的生活轨迹，且是独一无二的存在。</strong></p>
+<p>对我而言，<strong>记忆是极其珍贵的精神财富，它是无价之宝。它值得我倾尽心思用各种形式留住，无论好与坏。</strong></p>
+<p>人脑是不可靠的，存储的记忆时间一长容易发生偏差，甚至出现记忆断层。最保险的方式是借助<code>拍照</code>、<code>录像</code>、<code>录音</code>等形式保存，这些客观数据是可靠的，是真实的，不会作假。</p>
+<p>另外，主观感受也十分重要，这就需要你用<code>文字</code>的形式记录，勤快的可以写日记，如果懒点也可以写周记甚至月总结，贵在坚持。</p>
+<p>我是一个怀旧情结严重的人，喜欢回忆过去的点点滴滴。自2013年买第一块移动硬盘伊始，便走向了一条“不归路”，永远牢记保存自己和家人的一切记忆。</p>
+<p>此前，记忆数据都保存在笔记本电脑上，从来没想过电脑坏了里面的数据怎么办，现在想想，当时真是年少无知啊。好在所有数据还是成功转移到了移动硬盘上。</p>
+<p>写到这里，开诚布公，我写本文出于两个原因：</p>
+<ol>
+<li>网上没有找到一个系统的、靠谱的备份方案；</li>
+<li>我想从大家的反馈中汲取新思路、新方法；</li>
+</ol>
+<p>注意，本文更多是一种思维上的指引，而不是具体的操作步骤。如果你有疑惑，欢迎在留言区提问。</p>
+<h2 id="数据分级"><a href="#数据分级" class="headerlink" title="数据分级"></a>数据分级</h2><p>数据分级是对你的数据进行等级划分，确定哪些数据是一级核心数据，唯一且重要，哪些是二级重要数据，哪些是三级普通数据。以下是我给出的参考，你可以对照着分类，稍作微调。<strong>数据的重要程度因人而异</strong>。</p>
+<h3 id="核心数据"><a href="#核心数据" class="headerlink" title="核心数据"></a>核心数据</h3><p><strong>特点</strong><br>独一无二，不可替代，宝贵，记忆，隐私，持续更新。<br><strong>类型</strong></p>
+<ol>
+<li><strong>多媒体数据</strong>：诸如生活照片、视频、录音等，这些都是客观记忆的原始材料，重要程度可想而知。这些数据大多来源于单反、数码相机、手机、录音笔，部分是下载于微信、QQ等社交媒体。当然了，不是所有的数据都要，只保留那些能反映你生活状态，有关你自己的、家人的、朋友甚至同事的即可。</li>
+<li><strong>文档型数据</strong>：记账本、微信或QQ的聊天记录、短信、通讯录、大学时期各类文档、工作资料等。</li>
+<li><strong>文字型数据</strong>：如果你有写日记或者做技术笔记的习惯，最好是用多端同步的软件，比如有道云笔记、印象笔记、为知笔记等，都是不错的选择，除了云端保存外，要定期导出本地版本。</li>
+</ol>
+<h3 id="重要数据"><a href="#重要数据" class="headerlink" title="重要数据"></a>重要数据</h3><p><strong>特点</strong><br>可以侧面反映出以往的记忆或喜好，重要，但无隐私，可公开。</p>
+<ol>
+<li>收藏的图片。</li>
+<li>收藏的视频，网上难下载。</li>
+<li>喜欢的音乐，网上下载越来越难了。</li>
+<li>淘宝、京东等购物清单。</li>
+</ol>
+<h3 id="普通数据"><a href="#普通数据" class="headerlink" title="普通数据"></a>普通数据</h3><p><strong>特点</strong><br>无隐私，可公开，难获取，收费资源。</p>
+<ol>
+<li>学习资料：技术视频、兴趣爱好。</li>
+<li>素材资源：音效、图片、视频等素材，下载周期长，网上随时可能会删除。</li>
+<li>电影，十八禁。</li>
+</ol>
+<h2 id="存储介质"><a href="#存储介质" class="headerlink" title="存储介质"></a>存储介质</h2><p>直接说结论，用<strong>移动硬盘</strong>。<br>再说理由:</p>
+<ul>
+<li><strong>磁带、光盘、蓝光</strong>等，都是淘汰的技术，要么容易损坏，要么容量不够，首先排除这些选项。</li>
+<li><strong>固态硬盘</strong>放在电脑上使用性能很高，但不适合长时间保存数据，且物理损坏后数据不易恢复。</li>
+<li>3.5寸的<strong>机械硬盘</strong>是个不错的选择，但是使用不便，体积大不说，用时还要接线或外接转换头。</li>
+<li><strong>移动硬盘</strong>只有2.5寸，随身可带，只要有电脑，随时随地可备份，USB3.0读写速度能达几百兆。另外，每年因磁场变化导致硬盘损坏的概率只有1%，即便物理损坏，专业的数据修复中心也有办法恢复数据。容量方面，最高能达到12T。</li>
+</ul>
+<p>综合比较起来，移动硬盘无论是在便捷性、性能、容量上，都技高一筹，存储设备的不二之选。</p>
+<h2 id="多重备份"><a href="#多重备份" class="headerlink" title="多重备份"></a>多重备份</h2><p>为了避免<code>单点故障</code>(只要备份盘歇菜，所有数据报废且不可再生)，你至少得用<code>主备方案</code>，即两个移动硬盘，一个是主要盘，一个是备份盘。一旦你的移动硬盘丢了，或者挂彩了，你就哭去吧，哭也没用，它不会长脚回来，也不会起死回生。</p>
+<p>如果你用的主备方案，其中一个盘出事了，另外一个盘数据还在，基本上没什么损失，坏了大不了重新买一个。</p>
+<p>我本人是用<strong>三重备份</strong>，即三个移动硬盘同时在服役，其中主盘一个、备份盘两个。主盘是第一盘，优先用它，通常从手机或电脑里备份数据时，最先放在它上面，后面的同步都是基于主盘。备1和备2都是复制自主盘。</p>
+<p>另外要注意定期检查几个盘中的数据是否有损坏，有的话及时用其他盘的完整数据替换一下受损数据。</p>
+<h2 id="定期淘汰"><a href="#定期淘汰" class="headerlink" title="定期淘汰"></a>定期淘汰</h2><p>为了规避意外风险、保障数据安全，不必等到移动硬盘彻底坏了再换，通常我是<strong>每2-3年淘汰掉其中一块</strong>，新买的用作主盘，旧的退居为备盘，而淘汰的用来存储一些不重要的数据，比如电影、十八禁之类的。</p>
+<p>顺便一说，我人生中第一个移动硬盘是2013年买的，掉进过一次便池进了水，还好我迅速捡起来吹干了，还能继续用。中途还摔过一次，外壳松动了，但不影响使用。用了近七年，至今依然坚挺，不得不佩服东芝质量过硬。东芝的人看到了，请记得给我打钱啊。即便如此，考虑到它随时挂掉，我只把它当作备份的备份，即备2。</p>
+<h2 id="异地容灾"><a href="#异地容灾" class="headerlink" title="异地容灾"></a>异地容灾</h2><p>鸡蛋不能放在同一个篮框里的道理大家都懂，万一发生个什么火灾、地震之类的自然灾害，或者家里被盗窃了，那可是一锅端啊，后果不堪设想。至少放在两处吧，我在家里放两个，一主一备，在公司放一个备盘。</p>
+<p>今年过年回老家，再带一个备盘回家存放，做到万无一失。</p>
+<h2 id="安全问题"><a href="#安全问题" class="headerlink" title="安全问题"></a>安全问题</h2><p>设想一下，你其中一块移动硬盘坏了，是不是没什么感觉？但如果不是坏了，而是丢了一块被人捡到了呢？</p>
+<p>我设想过很多次，假如我丢了一块，一定会抓狂，在相当一段时间内，寝食难安，因为硬盘里有太多个人的隐私信息了，我不希望别人看到，感觉像是在裸奔。万一有不法份子把资料传播，那就傻眼了。</p>
+<p>直到这个月，我才意识到给硬盘加密，这样就可以高枕无忧了，丢了也无所谓，不用担惊受怕。</p>
+<p>具体做法是这样的：</p>
+<ol>
+<li>将移动硬盘里的数据全部转移到电脑或其他临时盘上，将该盘快速格式化掉，划分为两个分区。一个分区加密用来保存核心及重要数据的，一个不用加密，用来保存普通数据的。</li>
+<li>用VeraCrypt加密第一个分区，再将核心及重要数据转移到这个分区。VeraCrypt是一个高性能高安全性的开源软件，免费使用，FBI专家都无法破解，可放心食用。</li>
+<li>用DiskGenius隐藏掉加密分区，这样每次插进电脑时不会弹出格式化分区的警告了，避免误点格式化了加密分区。</li>
+</ol>
+<p>加密后的移动硬盘有个缺点，万一硬盘物理损坏，比如磁头受到撞击，那么拿到专业的数据恢复机构也无济于事。不用担心，我们不是还有多个硬盘吗，同时坏掉的可能性几乎是不存在的。</p>
+<h2 id="云盘备胎"><a href="#云盘备胎" class="headerlink" title="云盘备胎"></a>云盘备胎</h2><p>现在大容量的免费网盘随处可见，可以把网盘当备胎，就算移动硬盘全部毁灭了，你的数据也不会消亡。</p>
+<p>具体做法是：</p>
+<ul>
+<li>用VeraCrypt创建若干个1G、1.5G、2G、2.5G、3G、3.5G、4G的加密容器文件，注意，不能超过4G，因为网盘<br>免费用户单文件最大支持4G，如果你是会员则无所谓了，最大支持20G的，请随意。</li>
+<li>所有加密文件容器密码最好设成一致，不然会加大记忆难度。</li>
+<li>将核心、重要数据按批次放入加密文件容器中，做好命名，如照片Part1-4，表示这是第1部分，完整的共有4个部分。</li>
+<li>命名好后，逐个上传至云盘，建议和移动硬盘的目录名称保持一致，方便管理。</li>
+<li>优先上传那些稳定不变的数据，比如你上家公司的工作备份资料，前几年的照片、视频之类，不会再产生新数据，属于归档型的。那些一直在更新的，待稳定后再上传。</li>
+</ul>
+<h2 id="备份频率"><a href="#备份频率" class="headerlink" title="备份频率"></a>备份频率</h2><p>去年（2018年）有块移动硬盘备份数据后一不小心摔了，磁头摔坏，由于没有执行良好的备份原则，里头有五个月<br>的数据未及时同步，追悔莫及。痛定思痛，这事之后，我坚定了每半个月备份且同步一次的原则。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>最后，总结一下数据备份原则：</p>
+<ol>
+<li>划分数据重要等级，核心数据、重要数据、普通数据；</li>
+<li>至少2个移动硬盘，一主一备；最好3个移动硬盘，一主两备，多地存放；</li>
+<li>2-3年淘汰更换掉其中一块移动硬盘；</li>
+<li>划分成2个分区，用VeraCrypt加密其中一个分区，核心、重要数据放至其中；</li>
+<li>每半个月备份、主备同步一次；</li>
+<li>创建加密文件容器，核心、重要数据分批放至其中，上传至云盘；</li>
+</ol>
+<p>好了，以上是我总结的全部方法，我毫无保留地告诉了你，只是希望你也同我一样，珍视自己的记忆数据，定期科学保存。如果你还有好的方法和建议，欢迎评论区留言讨论，谢谢。</p>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><p>经济条件好的朋友，可以考虑<code>RAID</code>或<code>NAS</code>搭建家庭存储方案，特别是<code>NAS</code>，支持远程访问及存储，十分便利，重点推荐。</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li>[1] Skywind韦易笑.如何长时间保存重要数据 [EB&#x2F;OL]. <a target="_blank" rel="noopener external nofollow noreferrer" href="http://www.skywind.me/blog/archives/2554">http://www.skywind.me/blog/archives/2554</a>,  2019-5-9</li>
+</ul>
+<p>（全文完）</p>
+<p><strong>本文历史</strong></p>
+<ul>
+<li>2019年9月30日  完成文章初稿，花时约4小时。</li>
+<li>2019年12月23日 调整文章格式；补充一些内容；添加参考文献；添加文章历史。</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined" rel="external nofollow noreferrer">张品茗</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://ajioy.cn/howto/how-to-keep-your-memory-for-a-long-time/">https://ajioy.cn/howto/how-to-keep-your-memory-for-a-long-time/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="external nofollow noreferrer" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://ajioy.cn" target="_blank">Ajioy's World</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E6%80%BB%E7%BB%93/">总结</a><a class="post-meta__tags" href="/tags/%E5%88%86%E4%BA%AB/">分享</a></div><div class="post_share"><div class="addthis_inline_share_toolbox"></div><script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5d5143f6f8e9ce6b" async="async"></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i> 打赏</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="/img/wechat.jpg" target="_blank"><img class="post-qr-code-img" src="/img/wechat.jpg" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="/img/alipay.jpg" target="_blank"><img class="post-qr-code-img" src="/img/alipay.jpg" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/learning/knowledge-management-with-evernote/"><img class="prev-cover" src="https://cdn.jsdelivr.net/gh/ajioy/CDN@master/cover/knowledge-management-with-evernote.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="pagination-info"><div class="label">上一篇</div><div class="prev_info">经验漫谈，Evernote知识管理小妙招</div></div></a></div><div class="next-post pull-right"><a href="/thinking/why-do-i-have-to-morning-jogging/"><img class="next-cover" src="https://cdn.jsdelivr.net/gh/ajioy/CDN@master/cover/why-do-i-have-to-morning-jogging.jpg" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">为什么我要晨跑</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/howto/evernote-coverto-kindle-ebook/" title="如何把Evernote笔记制作成kindle电子书"><img class="cover" src="https://cdn.jsdelivr.net/gh/ajioy/CDN@master/cover/evernote-coverto-kindle-ebook.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-09-30 21:10</div><div class="title">如何把Evernote笔记制作成kindle电子书</div></div></a></div><div><a href="/learning/knowledge-management-with-evernote/" title="经验漫谈，Evernote知识管理小妙招"><img class="cover" src="https://cdn.jsdelivr.net/gh/ajioy/CDN@master/cover/knowledge-management-with-evernote.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-09-30 19:31</div><div class="title">经验漫谈，Evernote知识管理小妙招</div></div></a></div><div><a href="/working/technical-lead-tips/" title="年底了，分享一波干货，我当技术经理两年半总结的工作方法与管理心得"><img class="cover" src="https://cdn.jsdelivr.net/gh/ajioy/CDN@master/cover/technical-lead-tips.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2019-12-24 19:30</div><div class="title">年底了，分享一波干货，我当技术经理两年半总结的工作方法与管理心得</div></div></a></div></div></div><hr/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ajioy/CDN/js/iDisqus.min.css"/><script src="https://cdn.jsdelivr.net/gh/ajioy/CDN/js/iDisqus.min.js"></script><div id="comment"></div><script>var disq = new iDisqus('comment', {
+  forum: 'ajioy',
+  api: 'https://ajioycn.herokuapp.com/api/',
+  site: 'https://ajioy.cn',
+  mode: 1,
+  badge: '站长',
+  timeout: 3000,
+  init: true,
+  emojiPreview: true,
+});
+disq.count();</script></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">张品茗</div><div class="author-info__description">分享技术，记录生活，共同进步</div></div><div class="card-info-data is-center"><div class="card-info-data-item"><a href="/archives/"><div class="headline">文章</div><div class="length-num">22</div></a></div><div class="card-info-data-item"><a href="/tags/"><div class="headline">标签</div><div class="length-num">27</div></a></div><div class="card-info-data-item"><a href="/categories/"><div class="headline">分类</div><div class="length-num">12</div></a></div></div><a id="card-info-btn"><i class="fa fa-bookmark"></i><span>加入书签</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/ajioy" rel="external nofollow noreferrer" target="_blank" title=""><i class="fab fa-github"></i></a><a class="social-icon" href="http://weibo.com/ajioy" rel="external nofollow noreferrer" target="_blank" title=""><i class="fab fa-weibo"></i></a><a class="social-icon" href="https://blog.csdn.net/ajioy" rel="external nofollow noreferrer" target="_blank" title=""><i class="fa fa-book"></i></a><a class="social-icon" href="/atom.xml" target="_blank" title=""><i class="fa fa-rss"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">坚持原创，不定期更新！:)</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-text">前言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%83%8C%E6%99%AF%E8%AF%B4%E6%98%8E"><span class="toc-text">背景说明</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%95%B0%E6%8D%AE%E5%88%86%E7%BA%A7"><span class="toc-text">数据分级</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%A0%B8%E5%BF%83%E6%95%B0%E6%8D%AE"><span class="toc-text">核心数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%A6%81%E6%95%B0%E6%8D%AE"><span class="toc-text">重要数据</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%99%AE%E9%80%9A%E6%95%B0%E6%8D%AE"><span class="toc-text">普通数据</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AD%98%E5%82%A8%E4%BB%8B%E8%B4%A8"><span class="toc-text">存储介质</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%9A%E9%87%8D%E5%A4%87%E4%BB%BD"><span class="toc-text">多重备份</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%9A%E6%9C%9F%E6%B7%98%E6%B1%B0"><span class="toc-text">定期淘汰</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%82%E5%9C%B0%E5%AE%B9%E7%81%BE"><span class="toc-text">异地容灾</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98"><span class="toc-text">安全问题</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%91%E7%9B%98%E5%A4%87%E8%83%8E"><span class="toc-text">云盘备胎</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%A4%87%E4%BB%BD%E9%A2%91%E7%8E%87"><span class="toc-text">备份频率</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93"><span class="toc-text">总结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A1%A5%E5%85%85"><span class="toc-text">补充</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8F%82%E8%80%83%E6%96%87%E7%8C%AE"><span class="toc-text">参考文献</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/life/2021-annual-summary/" title="2021年度总结"><img src="https://cdn.jsdelivr.net/gh/ajioy/CDN@master/cover/default_bg.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2021年度总结"/></a><div class="content"><a class="title" href="/life/2021-annual-summary/" title="2021年度总结">2021年度总结</a><time datetime="2021-12-30T02:52:00.000Z" title="发表于 2021-12-30 10:52 10:52:00">2021-12-30 10:52</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/life/2020-annual-summary/" title="这一年，记忆深刻"><img src="https://cdn.jsdelivr.net/gh/ajioy/CDN@master/cover/2020-annual-summary.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="这一年，记忆深刻"/></a><div class="content"><a class="title" href="/life/2020-annual-summary/" title="这一年，记忆深刻">这一年，记忆深刻</a><time datetime="2020-12-29T09:04:00.000Z" title="发表于 2020-12-29 17:04 17:04:00">2020-12-29 17:04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/frontend/css3-cheat-sheet/" title="前端三剑客速查笔记之CSS3"><img src="https://cdn.jsdelivr.net/gh/ajioy/CDN@master/cover/css3-cheat-sheet.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前端三剑客速查笔记之CSS3"/></a><div class="content"><a class="title" href="/frontend/css3-cheat-sheet/" title="前端三剑客速查笔记之CSS3">前端三剑客速查笔记之CSS3</a><time datetime="2019-12-25T02:47:50.000Z" title="发表于 2019-12-25 10:47 10:47:50">2019-12-25 10:47</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/working/technical-lead-tips/" title="年底了，分享一波干货，我当技术经理两年半总结的工作方法与管理心得"><img src="https://cdn.jsdelivr.net/gh/ajioy/CDN@master/cover/technical-lead-tips.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="年底了，分享一波干货，我当技术经理两年半总结的工作方法与管理心得"/></a><div class="content"><a class="title" href="/working/technical-lead-tips/" title="年底了，分享一波干货，我当技术经理两年半总结的工作方法与管理心得">年底了，分享一波干货，我当技术经理两年半总结的工作方法与管理心得</a><time datetime="2019-12-24T11:30:00.000Z" title="发表于 2019-12-24 19:30 19:30:00">2019-12-24 19:30</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/frontend/html5-cheat-sheet/" title="前端三剑客速查笔记之HTML5"><img src="https://cdn.jsdelivr.net/gh/ajioy/CDN@master/cover/html5-cheat-sheet.jpg" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="前端三剑客速查笔记之HTML5"/></a><div class="content"><a class="title" href="/frontend/html5-cheat-sheet/" title="前端三剑客速查笔记之HTML5">前端三剑客速查笔记之HTML5</a><time datetime="2019-12-23T09:52:00.000Z" title="发表于 2019-12-23 17:52 17:52:00">2019-12-23 17:52</time></div></div></div></div></div></div></main><footer id="footer" style="background-image: url('https://cdn.jsdelivr.net/gh/ajioy/CDN@master/cover/how-to-keep-your-memory-for-a-long-time.jpg')"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2022 By 张品茗</div><div class="footer_custom_text">记录是最好的记忆，而记忆是最宝贵的精神财富！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><a id="to_comment" href="#post-comment" title="直达评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">本地搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div></div></div><div id="search-mask"></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script src="/js/search/local-search.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@latest/js/canvas-ribbon.js" size="150" alpha="0.3" zIndex="-1" mobile="true" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
